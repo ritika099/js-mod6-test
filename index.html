@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-6 Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="form-div container">
+        <form>
+            <div class="form-head">
+                <h1>Registration Form</h1>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <div class="input-group ">
+                            <input id="firstName" type="text" class="form-control">
+                        </div>
+                        <div id="firstNameError" class="form-text">Please enter the valid first name.</div>
+                    </div>
+    
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <div class="input-group ">
+                            <input id="lastName" type="text" class="form-control">
+                        </div>
+                        <div id="lastNameError" class="form-text">Please enter the valid second name.</div>
+                    </div>
+    
+                    <div class="col-sm-6">
+                        <label for="InputEmail" class="form-label">Email address</label>
+                        <div class="input-group ">
+                            <span class="input-group-text">@</span>
+                            <input id="InputEmail" type="email" class="form-control">
+                        </div>
+                        <div id="InputEmailError" class="form-text">Please enter the valid email.</div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="InputEmail" class="form-label">Mobile Number</label>
+                        <div class="input-group ">
+                            <span class="input-group-text">+91</span>
+                            <input id="InputMobile" type="mobile" class="form-control">
+                        </div>
+                        <div id="InputMobileError" class="form-text">Please enter the valid Mobile Number.</div>
+                    </div>
+                </div>
+                <br>
+                <div class="gender-country-section" align="center">
+                    <div>
+                        <label >Gender</label>
+                    </div>
+                        <input type="radio" name="gender" id="Maleinput">
+                        <label class="form-check-label" for="Maleinput">
+                            Male
+                        </label>
+                        <input type="radio" name="gender" id="femaleinput">
+                        <label class="form-check-label" for="femaleinput">
+                            Female
+                        </label>
+                        <input type="radio" name="gender" id="Otherinput">
+                        <label class="form-check-label" for="Otherinput">
+                            Other
+                        </label>
+
+                        <div id="InputGenderError" class="form-text">Please select the .</div>
+                </div>
+                <br/>
+                <div align="center">
+                    <div>
+                        <label>Country</label>
+                    </div>
+                    <select style="width: 30%;" class="form-select form-select-sm" aria-label=".form-select-lg example">
+                        <option selected>Choose...</option>
+                        <option value="I">India</option>
+                        <option value="U">USA</option>
+                      </select>
+                </div>
+            </div>
+            
+        </form>
+        <br/>
+        <div class="btn-div" >
+            <button onclick="formValidation()" class="btn btn-sm btn-dark">Submit</button>
+        </div>
+        <br>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
